@@ -57,6 +57,16 @@ div > p {
     padding-left: 0.5em;
 }
 
+td, th {
+	border: 1px solid black;
+	padding: 2px 8px;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
 /* Structural CSS */
 
 .left-column {
