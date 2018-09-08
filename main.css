@@ -68,6 +68,13 @@ table {
 
 /* Structural CSS */
 
+img.center {
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    max-width: 17em;
+}
+
 .left-column {
     float: left;
     margin-left: 2em;
