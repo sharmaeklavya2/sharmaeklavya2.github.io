@@ -41,6 +41,10 @@ h1 {
     font-size: 75%;
 }
 
+.date{
+    white-space: nowrap;
+}
+
 ::selection {
     background: #FDF4B6;
     color: #424242;
