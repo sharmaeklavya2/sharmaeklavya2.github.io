@@ -1,52 +1,73 @@
-/* Basic */
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+.infobox {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+img.my-photo {
+    display: block;
+    width: 100%;
+}
+.profiles {
+    display: flex;
+    align-items: center;
+}
+.profiles a {
+    display: flex;
+    padding: 0.2em;
+}
+.infobox .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infobox .email .icon {
+    max-width: 2.5em;
+    margin-right: 0.2em;
+}
+.icon {
+    height: 2em;
+    width: 100%;
 }
 
 body {
     background: #FFF;
-    font-family: 'Source Sans Pro', BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
     color: #333333;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 150%;
+
     margin: 0;
-    padding-left: 2.5rem;
-    padding-right: 3rem;
+    padding: 0 2.5em;
 }
-
-li {
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-}
-li img {
-    vertical-align: middle;
-}
-
 a {
     color: #3d7e9a;
 }
 a:not(:hover) {
     text-decoration: none;
 }
-
-h1, h2, h3, h4, p {
-    font-weight: normal;
-    margin: 1rem 0;
+::selection {
+    background: #FDF4B6;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: initial;
+}
+
 h1 {
     text-align: center;
     font-size: 4rem;
 }
-::selection {
-    background: #FDF4B6;
-    color: #424242;
+h2 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
 }
-
+li img {
+    vertical-align: middle;
+}
 .date, .topics {
     font-size: 75%;
 }
@@ -54,45 +75,9 @@ h1 {
     white-space: nowrap;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 2px 8px;
-}
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-/* Structural */
-
-.section, .section > p {
-    padding-left: 0.5rem;
-}
-
-img.my-photo {
-    max-width: 20rem;
-    float: left;
-}
-
-.profiles {
-    float: right;
-}
-
-.row1 {
-    padding: 0 0.5rem;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @media (max-width: 820px) {
-    .row1 {
-        flex-direction: column;
-    }
     body {
-        padding-left: 0.5rem;
-        padding-right: 1rem;
+        padding: 0 1em;
     }
 }
 @media (min-width: 821px) {
