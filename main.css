@@ -1,6 +1,5 @@
 .infobox {
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 1.5em;
     max-width: 16em;
     display: flex;
     flex-direction: column;
@@ -59,11 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     text-align: center;
-    font-size: 4rem;
-}
-h2 {
-    border-bottom: 1px solid #eaecef;
-    padding-bottom: 0.3em;
+    font-size: 3rem;
 }
 li img {
     vertical-align: middle;
@@ -79,9 +74,23 @@ li img {
     body {
         padding: 0 1em;
     }
+    ul {
+        padding-left: 1em;
+    }
+    ol {
+        padding-left: 1.2em;
+    }
+    .infobox {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (min-width: 821px) {
     p {
         text-align: justify;
+    }
+    .infobox {
+        float: right;
+        margin-left: 2em;
     }
 }
