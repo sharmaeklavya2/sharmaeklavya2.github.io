@@ -6,6 +6,9 @@
     align-items: stretch;
     background-color: rgba(0, 0, 0, 0.1);
 }
+.infobox a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 img.my-photo {
     display: block;
     width: 100%;
