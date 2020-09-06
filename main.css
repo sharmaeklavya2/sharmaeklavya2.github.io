@@ -58,6 +58,10 @@ img.my-photo {
     height: 2em;
     width: 100%;
 }
+#email-obfus {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* main */
 body {
