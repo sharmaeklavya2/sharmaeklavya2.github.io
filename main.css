@@ -6,6 +6,7 @@ body {
     --sub-text-color: rgb(80, 80, 80);
     --icon-color: var(--text-color);
     --link-color: rgb(0, 125, 180);
+    --sub-link-color: rgb(0, 125, 180);
 }
 @media (prefers-color-scheme: dark) {
     body {
@@ -15,6 +16,7 @@ body {
         --sub-text-color: rgb(130, 130, 130);
         --icon-color: rgb(160, 160, 160);
         --link-color: rgb(65, 175, 235);
+        --sub-link-color: rgb(32, 150, 205);
     }
     img {
         filter: brightness(.8) contrast(1.2);
@@ -91,12 +93,25 @@ h1 {
 li img {
     vertical-align: middle;
 }
-.date, .topics {
-    font-size: 75%;
-    color: var(--sub-text-color);
+.project-list h2 {
+    margin: 0;
+    font-size: 1.2em;
+    display: inline;
 }
-.date {
+.project-list header {
+    margin: 1em 0;
+}
+.hmeta {
+    color: var(--sub-text-color);
+    font-size: 95%;
+    display: block;
+}
+.hmeta.date {
+    display: inline;
     white-space: nowrap;
+}
+a.hmeta, .hmeta a {
+    color: var(--sub-link-color);
 }
 #email-icon, #github-icon {
     fill: var(--icon-color);
