@@ -90,6 +90,11 @@ h1 {
     text-align: center;
     font-size: 3rem;
 }
+.subh {
+    color: var(--sub-text-color);
+    font-weight: 400;
+    font-size: 80%;
+}
 li img {
     vertical-align: middle;
 }
