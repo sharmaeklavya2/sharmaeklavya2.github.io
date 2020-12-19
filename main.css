@@ -26,7 +26,7 @@ body {
 /* infobox */
 .infobox {
     margin-bottom: 1.5em;
-    max-width: 16em;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
