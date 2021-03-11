@@ -69,9 +69,17 @@ img.fix-ar {
     height: 2em;
     width: 100%;
 }
-#email-obfus {
-    display: flex;
+.email-obfus {
     flex-direction: row-reverse;
+}
+.ask-to-hover {
+    color: var(--sub-text-color);
+}
+.email .email-obfus, .email:hover .ask-to-hover, .email:focus .ask-to-hover {
+    display: none;
+}
+.email .ask-to-hover, .email:hover .email-obfus, .email:focus .email-obfus {
+    display: flex;
 }
 
 /* main */
