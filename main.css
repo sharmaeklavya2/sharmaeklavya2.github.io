@@ -57,12 +57,12 @@ img.fix-ar {
     display: flex;
     padding: 0.2em;
 }
-.infobox .email {
+.infobox .emla {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.infobox .email .icon {
+.infobox .emla .icon {
     max-width: 2.5em;
     margin-right: 0.2em;
 }
@@ -70,16 +70,16 @@ img.fix-ar {
     height: 2em;
     width: 100%;
 }
-.email-obfus {
+.obfus {
     flex-direction: row-reverse;
 }
-.ask-to-hover {
+.ask-upper {
     color: var(--sub-text-color);
 }
-.email .email-obfus, .email:hover .ask-to-hover, .email:focus .ask-to-hover {
+.ask-container .ask-lower, .ask-container:hover .ask-upper, .ask-container:focus .ask-upper {
     display: none;
 }
-.email .ask-to-hover, .email:hover .email-obfus, .email:focus .email-obfus {
+.ask-container .ask-upper, .ask-container:hover .ask-lower, .ask-container:focus .ask-lower {
     display: flex;
 }
 
@@ -136,7 +136,7 @@ li img {
 a.hmeta, .hmeta a {
     color: var(--sub-link-color);
 }
-#email-icon, #github-icon {
+#emla-icon, #github-icon {
     fill: var(--icon-color);
 }
 
