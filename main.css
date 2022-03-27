@@ -15,7 +15,7 @@ body {
         --bg-color-2: rgba(255, 255, 255, 0.05);
         --text-color: rgb(200, 200, 200);
         --sub-text-color: rgb(160, 160, 160);
-        --icon-color: rgb(160, 160, 160);
+        --icon-color: rgb(190, 190, 190);
         --link-color: rgb(65, 175, 235);
         --sub-link-color: rgb(44, 160, 216);
     }
@@ -74,7 +74,7 @@ img.fix-ar {
     flex-direction: row-reverse;
 }
 .ask-upper {
-    color: var(--sub-text-color);
+    color: var(--icon-color);
 }
 .ask-container .ask-lower, .ask-container:hover .ask-upper, .ask-container:focus .ask-upper {
     display: none;
