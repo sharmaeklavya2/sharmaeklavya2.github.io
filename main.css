@@ -5,7 +5,7 @@ body {
     --active-bg-color: var(--bg-color-2);
     --text-color: rgb(50, 50, 50);
     --sub-text-color: rgb(80, 80, 80);
-    --icon-color: var(--text-color);
+    --icon-color: var(--sub-text-color);
     --link-color: rgb(3, 102, 214);
     --sub-link-color: var(--link-color);
 }
@@ -15,7 +15,6 @@ body {
         --bg-color-2: rgba(255, 255, 255, 0.05);
         --text-color: rgb(200, 200, 200);
         --sub-text-color: rgb(160, 160, 160);
-        --icon-color: rgb(190, 190, 190);
         --link-color: rgb(65, 175, 235);
         --sub-link-color: rgb(44, 160, 216);
     }
@@ -67,8 +66,9 @@ img.fix-ar {
     margin-right: 0.2em;
 }
 .icon {
-    height: 2em;
+    height: 1.75em;
     width: 100%;
+    fill: var(--icon-color);
 }
 .obfus {
     flex-direction: row-reverse;
@@ -140,9 +140,6 @@ li img {
 }
 a.hmeta, .hmeta a {
     color: var(--sub-link-color);
-}
-#emla-icon, #github-icon {
-    fill: var(--icon-color);
 }
 
 .paper-list > li {margin-bottom: 1em;}
