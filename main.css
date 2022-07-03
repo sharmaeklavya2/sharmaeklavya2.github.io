@@ -153,6 +153,21 @@ a.hmeta, .hmeta a {
     background-color: var(--active-bg-color);
     box-shadow: 0px 0px 5px 10px var(--active-bg-color);
 }
+.hori-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.hori-list > li:last-child::after {
+    content: ".";
+}
+.hori-list > li:not(:last-child)::after {
+    content: ", ";
+    white-space: pre;
+}
 
 /* responsiveness */
 @media (max-width: 820px) {
