@@ -143,10 +143,11 @@ a.hmeta, .hmeta a {
 }
 
 .paper-list > li {margin-bottom: 1em;}
-.cite-title, .cite-link, .cite-authors-venue {display: block;}
+.cite-title, .cite-link, .cite-authors-venue, .cite-note {display: block;}
 .cite-title {font-size: 1.2em;}
+.cite-note {font-size: 0.9em;}
 .cite-link {font-family: monospace;}
-.cite-authors-venue {color: var(--sub-text-color);}
+.cite-authors-venue, .cite-note {color: var(--sub-text-color);}
 .cite-authors-venue a {color: var(--sub-link-color);}
 
 .linkable-list > li:target {
