@@ -52,7 +52,7 @@ body {
     position: relative;
     height: 500px;
     min-height: 450px;
-    min-width: 530px;
+    min-width: 600px;
     overflow-y: scroll;
     scrollbar-width: none;
     resize: vertical;
@@ -87,6 +87,9 @@ body {
 .ttab-tick-label {
     width: 3rem;
 }
+.ttab-tick-label.ttab-right {
+    text-align: right;
+}
 @media (max-width: 850px) {
 .ttab-tick-label {
     width: 2.2rem;
@@ -108,6 +111,8 @@ body {
 
 .ttab-margin {
     width: 3.5rem;
+}
+.ttab-margin.ttab-left {
     border-right: 1px solid var(--tick-color);
 }
 @media (max-width: 850px) {
