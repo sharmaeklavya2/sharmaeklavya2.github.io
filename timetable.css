@@ -152,6 +152,9 @@ body {
 .ttab-event::-webkit-scrollbar {
     display: none;
 }
+.ttab-event:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+}
 .ttab-event > * {
     margin: 0.1rem 0.3rem;
     white-space: nowrap;
