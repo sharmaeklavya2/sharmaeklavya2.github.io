@@ -43,21 +43,22 @@ h1 {
 }
 
 /* timetable */
-body {
-    --tick-color: rgba(128, 128, 128, 0.4);
-    --header-height: 3rem;
-}
-.main {
+.ttab-wrapper {
     margin: 1.5em 0;
     position: relative;
     height: 500px;
     min-height: 450px;
     min-width: 600px;
+    max-width: 1400px;
     overflow-y: scroll;
     scrollbar-width: none;
     resize: vertical;
     font-size: 1rem;
     line-height: 100%;
+    --tick-color: rgba(128, 128, 128, 0.4);
+    --header-height: 3rem;
+    --outline-color: rgba(128, 128, 128, 0.6);
+    --outline-width: 2px;
 }
 @media (max-width: 820px) {
     .main {font-size: 0.9rem;}
@@ -97,7 +98,7 @@ body {
 }
 }
 .ttab-tick-line {
-    height: 0px;
+    height: 0;
     flex: 1;
     border-top: 1px solid var(--tick-color);
 }
@@ -139,11 +140,12 @@ body {
 }
 .ttab-event {
     position: absolute;
-    width: calc(100% - 4px);
-    left: 2px;
+    width: calc(100% - 2 * var(--outline-width));
+    left: var(--outline-width);
     background-color: rgba(128, 128, 128, 0.3);
     border-radius: 0.4rem;
     outline: 1px solid var(--tick-color);
+    outline: var(--outline-width) solid var(--outline-color);
     display: flex;
     flex-direction: column;
     overflow: auto;
