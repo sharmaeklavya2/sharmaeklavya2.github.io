@@ -77,6 +77,10 @@ img.fix-ar {
 .ask-upper {
     color: var(--icon-color);
 }
+.ask-container .ask-lower, .ask-container .ask-upper {
+    width: 9em;
+    justify-content: start;
+}
 .ask-container .ask-lower, .ask-container:hover .ask-upper, .ask-container:focus .ask-upper {
     display: none;
 }
