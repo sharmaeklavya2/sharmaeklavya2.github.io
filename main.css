@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: initial;
 }
+.monosp {font-family: monospace;}
 #main-nav-links {
     font-size: 1.2em;
     line-height: 1.5em;
@@ -150,7 +151,6 @@ a.hmeta, .hmeta a {
 .cite-title, .cite-link, .cite-authors-venue, .cite-note {display: block;}
 .cite-title {font-size: 1.2em;}
 .cite-note {font-size: 0.9em;}
-.cite-link {font-family: monospace;}
 .cite-authors-venue, .cite-note {color: var(--sub-text-color);}
 .cite-authors-venue a {color: var(--sub-link-color);}
 
