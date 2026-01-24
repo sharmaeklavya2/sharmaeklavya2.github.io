@@ -60,8 +60,8 @@ h1 {
 }
 .ttab-wrapper {
     position: relative;
-    height: 500px;
-    min-height: 450px;
+    height: 450px;
+    min-height: 400px;
     min-width: 600px;
     max-width: 1400px;
     overflow-y: scroll;
