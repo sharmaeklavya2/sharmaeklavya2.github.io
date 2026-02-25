@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/eklavya2/public_html/
+    - rsync -av --delete --exclude google91ccd481147902ab.html ./ $DEPLOYPATH/
