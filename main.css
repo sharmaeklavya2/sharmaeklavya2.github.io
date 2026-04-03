@@ -11,12 +11,12 @@ body {
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background: rgb(25, 30, 35);
+        background: #191e23;
         --bg-color-2: rgba(255, 255, 255, 0.05);
-        --text-color: rgb(200, 200, 200);
-        --sub-text-color: rgb(160, 160, 160);
-        --link-color: rgb(65, 175, 235);
-        --sub-link-color: rgb(44, 160, 216);
+        --text-color: #c8c8c8;
+        --sub-text-color: #a0a0a0;
+        --link-color: #66ccff;
+        --sub-link-color: #45b0e6;
     }
     img {
         filter: brightness(.8) contrast(1.2);
