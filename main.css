@@ -105,7 +105,7 @@ img.fix-ar {
 .nav-cards > a:active {
     background-color: var(--tint2);
 }
-.nav-cards > a > label {
+.nav-cards > a > .label {
     font-size: 1.45rem;
     margin: 0.3rem 0.5rem 0 0.3rem;
 }
