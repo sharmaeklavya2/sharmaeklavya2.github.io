@@ -115,7 +115,7 @@ img.fix-ar {
     background-color: var(--bg-color-3);
 }
 .nav-cards > a > label {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     margin: 0.3rem 0.5rem 0 0.3rem;
 }
 .nav-cards > a > .icon {
@@ -124,7 +124,22 @@ img.fix-ar {
 }
 @media (min-width: 820px) {
     .nav-cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .nav-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1599px) {
+    .nav-cards {
+        clear: both;
+    }
+}
+@media (min-width: 2000px) {
+    .nav-cards {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
