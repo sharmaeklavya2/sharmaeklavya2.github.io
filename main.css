@@ -1,26 +1,16 @@
 /* color scheme */
 body {
-    background: rgb(250, 250, 250);
-    --bg-color-2: rgba(0, 0, 0, 0.1);
-    --bg-color-3: rgba(0, 0, 0, 0.2);
-    --active-bg-color: var(--bg-color-2);
-    --text-color: rgb(50, 50, 50);
-    --sub-text-color: rgb(80, 80, 80);
-    --text-vdim: rgb(128, 128, 128);
-    --icon-color: var(--sub-text-color);
-    --link-color: rgb(3, 102, 214);
-    --sub-link-color: var(--link-color);
+    --bg-color: #fafafa; --tint1: #00000020; --tint2: #00000040;
+    --text-color: #303030; --text-dim1: #505050; --text-dim2: #808080;
+    --link-color: #0366d6; --link-dim1: #487fd6;
+    --link-uline: #0366d640; --link-uline-dim1: #487fd640;
 }
 @media (prefers-color-scheme: dark) {
     body {
-        background: #191e23;
-        --bg-color-2: rgba(255, 255, 255, 0.05);
-        --bg-color-3: rgba(255, 255, 255, 0.1);
-        --text-color: #c8c8c8;
-        --sub-text-color: #a0a0a0;
-        --text-vdim: #808080;
-        --link-color: #66ccff;
-        --sub-link-color: #45b0e6;
+        --bg-color: #191e23; --tint1: #ffffff10; --tint2: #ffffff20;
+        --text-color: #c8c8c8; --text-dim1: #a0a0a0; --text-dim2: #808080;
+        --link-color: #66ccff; --link-dim1: #6daad2;
+        --link-uline: #66ccff60; --link-uline-dim1: #6daad260;
     }
     img {
         filter: brightness(.8) contrast(1.2);
@@ -34,10 +24,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background-color: var(--bg-color-2);
+    background-color: var(--tint1);
 }
 .infobox a:hover {
-    background-color: var(--bg-color-2);
+    background-color: var(--tint1);
 }
 .ar-1-1 {
     width: 100%;
@@ -72,14 +62,14 @@ img.fix-ar {
 .icon {
     height: 1.75em;
     width: 100%;
-    color: var(--icon-color);
+    color: var(--text-dim1);
 }
 .obfus {
     flex-direction: row-reverse;
     white-space: nowrap;
 }
 .ask-upper {
-    color: var(--icon-color);
+    color: var(--text-dim1);
 }
 .ask-container .ask-lower, .ask-container .ask-upper {
     width: 9em;
@@ -102,17 +92,18 @@ img.fix-ar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
 
-    border: 1px solid var(--text-vdim);
+    border: 1px solid var(--text-dim2);
     border-radius: 0.3rem;
     color: var(--text-color);
 }
 .nav-cards > a:hover, .nav-cards > a:focus {
     text-decoration: none;
-    background-color: var(--bg-color-2);
+    background-color: var(--tint1);
 }
 .nav-cards > a:active {
-    background-color: var(--bg-color-3);
+    background-color: var(--tint2);
 }
 .nav-cards > a > label {
     font-size: 1.45rem;
@@ -146,6 +137,7 @@ img.fix-ar {
 /* main */
 body {
     color: var(--text-color);
+    background-color: var(--bg-color);
     font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
     font-size: 1.2em;
     line-height: 150%;
@@ -155,9 +147,12 @@ body {
 }
 a {
     color: var(--link-color);
+    text-decoration-color: var(--link-uline);
+    text-decoration-thickness: 6%;
 }
-a:not(:hover) {
-    text-decoration: none;
+a:hover, a:focus {
+    text-decoration-color: currentColor !important;
+    text-decoration-thickness: 8%;
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
@@ -174,7 +169,7 @@ h1 {
     font-size: 3rem;
 }
 .subh {
-    color: var(--sub-text-color);
+    color: var(--text-dim1);
     font-weight: 400;
     font-size: 80%;
 }
@@ -190,7 +185,7 @@ li img {
     margin: 1em 0;
 }
 .hmeta {
-    color: var(--sub-text-color);
+    color: var(--text-dim1);
     font-size: 95%;
     display: block;
 }
@@ -199,19 +194,23 @@ li img {
     white-space: nowrap;
 }
 a.hmeta, .hmeta a {
-    color: var(--sub-link-color);
+    color: var(--link-dim1);
+    text-decoration-color: var(--link-uline-dim1);
 }
 
 .paper-list > li {margin-bottom: 1em;}
 .cite-title, .cite-link, .cite-authors-venue, .cite-note {display: block;}
 .cite-title {font-size: 1.2em;}
 .cite-note {font-size: 0.9em;}
-.cite-authors-venue, .cite-note {color: var(--sub-text-color);}
-.cite-authors-venue a {color: var(--sub-link-color);}
+.cite-authors-venue, .cite-note {color: var(--text-dim1);}
+.cite-authors-venue a {
+    color: var(--link-dim1);
+    text-decoration-color: var(--link-uline-dim1);
+}
 
 .linkable-list > li:target {
-    background-color: var(--active-bg-color);
-    box-shadow: 0px 0px 5px 10px var(--active-bg-color);
+    background-color: var(--tint1);
+    box-shadow: 0px 0px 5px 10px var(--tint1);
 }
 .hori-list {
     padding: 0;
