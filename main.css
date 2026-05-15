@@ -68,7 +68,7 @@ img.fix-ar {
 .icon {
     height: 1.75em;
     width: 100%;
-    fill: var(--icon-color);
+    color: var(--icon-color);
 }
 .obfus {
     flex-direction: row-reverse;
