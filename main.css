@@ -2,9 +2,11 @@
 body {
     background: rgb(250, 250, 250);
     --bg-color-2: rgba(0, 0, 0, 0.1);
+    --bg-color-3: rgba(0, 0, 0, 0.2);
     --active-bg-color: var(--bg-color-2);
     --text-color: rgb(50, 50, 50);
     --sub-text-color: rgb(80, 80, 80);
+    --text-vdim: rgb(128, 128, 128);
     --icon-color: var(--sub-text-color);
     --link-color: rgb(3, 102, 214);
     --sub-link-color: var(--link-color);
@@ -13,8 +15,10 @@ body {
     body {
         background: #191e23;
         --bg-color-2: rgba(255, 255, 255, 0.05);
+        --bg-color-3: rgba(255, 255, 255, 0.1);
         --text-color: #c8c8c8;
         --sub-text-color: #a0a0a0;
+        --text-vdim: #808080;
         --link-color: #66ccff;
         --sub-link-color: #45b0e6;
     }
@@ -86,6 +90,42 @@ img.fix-ar {
 }
 .ask-container .ask-upper, .ask-container:hover .ask-lower, .ask-container:focus .ask-lower {
     display: flex;
+}
+
+/* nav cards */
+.nav-cards {
+    display: grid;
+    gap: 1em;
+    margin: 1em 0;
+}
+.nav-cards > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: 1px solid var(--text-vdim);
+    border-radius: 0.3rem;
+    color: var(--text-color);
+}
+.nav-cards > a:hover, .nav-cards > a:focus {
+    text-decoration: none;
+    background-color: var(--bg-color-2);
+}
+.nav-cards > a:active {
+    background-color: var(--bg-color-3);
+}
+.nav-cards > a > label {
+    font-size: 1.5rem;
+    margin: 0.3rem 0.5rem 0 0.3rem;
+}
+.nav-cards > a > .icon {
+    max-width: 2.5rem;
+    margin: 0.7rem;
+}
+@media (min-width: 820px) {
+    .nav-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* main */
