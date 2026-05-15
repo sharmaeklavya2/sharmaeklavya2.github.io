@@ -64,6 +64,9 @@ img.fix-ar {
     width: 100%;
     color: var(--text-dim1);
 }
+.infobox a:hover .icon, .infobox a:focus .icon {
+    color: var(--text-color);
+}
 .obfus {
     flex-direction: row-reverse;
     white-space: nowrap;
@@ -229,7 +232,7 @@ a.hmeta, .hmeta a {
 }
 
 /* responsiveness */
-@media (max-width: 820px) {
+@media (max-width: 819px) {
     body {
         padding: 0 1em;
     }
@@ -244,7 +247,7 @@ a.hmeta, .hmeta a {
         margin-right: auto;
     }
 }
-@media (min-width: 821px) {
+@media (min-width: 820px) {
     p {
         text-align: justify;
     }
