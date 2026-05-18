@@ -200,7 +200,13 @@ a.hmeta, .hmeta a {
     color: var(--link-dim1);
     text-decoration-color: var(--link-uline-dim1);
 }
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* citations */
 .paper-list > li {margin-bottom: 1em;}
 .cite-title, .cite-link, .cite-authors-venue, .cite-note {display: block;}
 .cite-title {font-size: 1.2em;}
@@ -211,6 +217,7 @@ a.hmeta, .hmeta a {
     text-decoration-color: var(--link-uline-dim1);
 }
 
+/* lists */
 .linkable-list > li:target {
     background-color: var(--tint1);
     box-shadow: 0px 0px 5px 10px var(--tint1);
