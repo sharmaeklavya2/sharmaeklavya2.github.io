@@ -4,6 +4,7 @@ body {
     --text-color: #303030; --text-dim1: #505050; --text-dim2: #808080;
     --link-color: #0366d6; --link-dim1: #487fd6;
     --link-uline: #0366d640; --link-uline-dim1: #487fd640;
+    --gold-color: #d9b45a;
 }
 @media (prefers-color-scheme: dark) {
     body {
@@ -205,6 +206,7 @@ img {
     justify-content: center;
     align-items: center;
 }
+.golden {color: var(--gold-color);}
 
 /* citations */
 .paper-list > li {margin-bottom: 1em;}
