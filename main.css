@@ -149,6 +149,9 @@ body {
     margin: 0;
     padding: 0 2.5em;
 }
+.hidden {
+    display: none !important;
+}
 a {
     color: var(--link-color);
     text-decoration-color: var(--link-uline);
