@@ -211,13 +211,14 @@ img {
 }
 .golden {color: var(--gold-color);}
 
-/* citations */
+/* publications */
 .paper-list > li {margin-bottom: 1em;}
-.cite-title, .cite-link, .cite-authors-venue, .cite-note {display: block;}
-.cite-title {font-size: 1.2em;}
-.cite-note {font-size: 0.9em;}
-.cite-authors-venue, .cite-note {color: var(--text-dim1);}
-.cite-authors-venue a {
+.pub-title {font-size: 1.1em;}
+.pub-key {color: var(--text-dim1);}
+.pub-authors, .pub-links, .pub-note {
+    font-size: 0.9em; color: var(--text-dim1);
+}
+.pub-authors a, .pub-links a {
     color: var(--link-dim1);
     text-decoration-color: var(--link-uline-dim1);
 }
