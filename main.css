@@ -97,6 +97,7 @@ img.fix-ar {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
+    line-height: 2.25;
 
     border: 1px solid var(--text-dim2);
     border-radius: 0.2rem;
